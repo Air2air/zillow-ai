@@ -1,0 +1,92 @@
+{
+  "result": [
+    {
+      "zpid": "12345678",
+      "links": {
+        "homedetails": "http://www.zillow.com/homedetails/12345678_zpid/",
+        "graphsanddata": "http://www.zillow.com/homedetails/12345678_zpid/#graphs-and-data",
+        "mapthishome": "http://www.zillow.com/homedetails/12345678_zpid/#map-this-home",
+        "comparables": "http://www.zillow.com/homedetails/12345678_zpid/#comparables"
+      },
+      "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "zipcode": "12345"
+      },
+      "FIPScounty": "06037",
+      "useCode": "SingleFamily",
+      "taxAssessmentYear": "2022",
+      "taxAssessment": "123456.0",
+      "yearBuilt": "1950",
+      "lotSizeSqFt": "5000",
+      "finishedSqFt": "1500",
+      "bathrooms": "2.0",
+      "bedrooms": "3",
+      "totalRooms": "5",
+      "lastSoldDate": "2022-01-01",
+      "lastSoldPrice": {
+        "currency": "USD",
+        "_": "500000"
+      },
+      "zestimate": {
+        "amount": {
+          "currency": "USD",
+          "_": "550000"
+        },
+        "last-updated": "2023-02-15",
+        "oneWeekChange": {
+          "deprecated": "true"
+        }
+      },
+      "zindexValue": "538,500",
+      "overallType": "Single Family Residential",
+      "overallTypeSource": "",
+      "parcelId": "1234567890"
+    },
+    {
+      "zpid": "98765432",
+      "links": {
+        "homedetails": "http://www.zillow.com/homedetails/98765432_zpid/",
+        "graphsanddata": "http://www.zillow.com/homedetails/98765432_zpid/#graphs-and-data",
+        "mapthishome": "http://www.zillow.com/homedetails/98765432_zpid/#map-this-home",
+        "comparables": "http://www.zillow.com/homedetails/98765432_zpid/#comparables"
+      },
+      "address": {
+        "street": "456 Elm St",
+        "city": "Othertown",
+        "state": "NY",
+        "zipcode": "67890"
+      },
+      "FIPScounty": "36047",
+      "useCode": "Condo",
+      "taxAssessmentYear": "2021",
+      "taxAssessment": "98765.0",
+      "yearBuilt": "2000",
+      "lotSizeSqFt": "1000",
+      "finishedSqFt": "2000",
+      "bathrooms": "1.5",
+      "bedrooms": "2",
+      "totalRooms": "4",
+      "lastSoldDate": "2021-06-01",
+      "lastSoldPrice": {
+        "currency": "USD",
+        "_": "300000"
+      },
+      "zestimate": {
+        "amount": {
+          "currency": "USD",
+          "_": "350000"
+        },
+        "last-updated": "2023-03-15",
+        "oneWeekChange": {
+          "deprecated": "true"
+        }
+      },
+      "zindexValue": "328,500",
+      "overallType": "Condominium",
+      "overallTypeSource": "",
+      "parcelId": "9876543210"
+    }
+  ]
+}

@@ -1,17 +1,21 @@
-"use client";
+"use client"
+
 
 import React, { useState, useEffect } from "react";
-
 import axios from "axios";
-import xmlJs from 'xml-js';
+import mockData from "../data/mockData.json";
+import { SearchResults, Result } from "../types/types";
 
 const ZillowListings = () => {
-  const [listings, setListings] = useState([]);
+  const [listings, setListings] = useState<Result[]>([]);
   const [error, setError] = useState(null);
   const [useMockData, setUseMockData] = useState(true);
 
   useEffect(() => {
-    if (!useMockData) {
+    if (useMockData) {
+      const mockListings: SearchResults = mockData;
+      setListings(mockListings.result);
+    } else {
       const fetchListings = async () => {
         try {
           const response = await axios.get(
@@ -25,21 +29,19 @@ const ZillowListings = () => {
           );
           const parser = new DOMParser();
           const xmlDoc = parser.parseFromString(response.data, "text/xml");
-          const listings = xmlDoc.getElementsByTagName("response");
-          setListings(Array.from(listings));
+          const listings: SearchResults = {
+            response: {
+              results: {
+                result: Array.from(xmlDoc.getElementsByTagName("response")),
+              },
+            },
+          };
+          setListings(listings.result);
         } catch (error) {
           setError(error.message);
         }
       };
       fetchListings();
-    } else {
-      axios.get('../api/xml')
-        .then(response => {
-          setListings(response.data.response.results.result);
-        })
-        .catch(error => {
-          setError(error.message);
-        });
     }
   }, [useMockData]);
 
@@ -56,16 +58,22 @@ const ZillowListings = () => {
       {error ? (
         <div>Error: {error}</div>
       ) : (
-        <div>
+        <ul>
           {listings.map((listing, index) => (
-            <div key={index}>
+            <li key={index}>
+              <h2>{listing.address.street}</h2>
               <p>
-                {listing.address.street}, {listing.address.city},{" "}
-                {listing.address.state} {listing.address.zipcode}
+                {listing.address.city}, {listing.address.state}{" "}
+                {listing.address.zipcode}
               </p>
-            </div>
+              <p>Price: {listing.lastSoldPrice._}</p>
+              <p>
+                Zestimate: {listing.zestimate.amount._}{" "}
+                {listing.zestimate.amount.currency}
+              </p>
+            </li>
           ))}
-        </div>
+        </ul>
       )}
     </div>
   );
