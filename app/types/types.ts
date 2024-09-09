@@ -1,23 +1,16 @@
-interface Address {
-  street: string;
-  city: string;
-  state: string;
-  zipcode: string;
-}
-
-interface Links {
+export interface Links {
   homedetails: string;
   graphsanddata: string;
   mapthishome: string;
   comparables: string;
 }
 
-interface LastSoldPrice {
+export interface LastSoldPrice {
   currency: string;
   _: string;
 }
 
-interface Zestimate {
+export interface Zestimate {
   amount: {
     currency: string;
     _: string;
@@ -28,7 +21,14 @@ interface Zestimate {
   };
 }
 
-interface Result {
+export interface Address {
+  street: string;
+  city: string;
+  state: string;
+  zipcode: string;
+}
+
+export interface Result {
   zpid: string;
   links: Links;
   address: Address;
@@ -51,12 +51,7 @@ interface Result {
   parcelId: string;
 }
 
-interface Response {
-  results: {
-    result: Result[];
-  };
+export interface MockData {
+  result: Result[];
 }
 
-interface SearchResults {
-  response: Response;
-}

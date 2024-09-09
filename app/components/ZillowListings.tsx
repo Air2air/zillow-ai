@@ -1,50 +1,41 @@
 "use client"
 
-
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import mockData from "../data/mockData.json";
-import { SearchResults, Result } from "../types/types";
+import { MockData, Result } from "../types/types";
 
 const ZillowListings = () => {
-  const [listings, setListings] = useState<Result[]>([]);
+  const [listings, setListings] = useState<MockData>({ result: [] });
   const [error, setError] = useState(null);
   const [useMockData, setUseMockData] = useState(true);
 
+  const fetchListings = async () => {
+    try {
+      const response = await axios.get(
+        "https://www.zillow.com/webservice/GetDeepSearchResults.htm",
+        {
+          params: {
+            "zws-id": "YOUR_ZILLOW_API_KEY",
+            citystatezip: "New York, NY",
+          },
+        }
+      );
+      const data: MockData = response.data;
+      setListings(data);
+    } catch (error: any) {
+      setError(error.message);
+    }
+  };
+  
   useEffect(() => {
     if (useMockData) {
-      const mockListings: SearchResults = mockData;
-      setListings(mockListings.result);
+      setListings(mockData);
     } else {
-      const fetchListings = async () => {
-        try {
-          const response = await axios.get(
-            "https://www.zillow.com/webservice/GetDeepSearchResults.htm",
-            {
-              params: {
-                "zws-id": "YOUR_ZILLOW_API_KEY",
-                citystatezip: "New York, NY",
-              },
-            }
-          );
-          const parser = new DOMParser();
-          const xmlDoc = parser.parseFromString(response.data, "text/xml");
-          const listings: SearchResults = {
-            response: {
-              results: {
-                result: Array.from(xmlDoc.getElementsByTagName("response")),
-              },
-            },
-          };
-          setListings(listings.result);
-        } catch (error) {
-          setError(error.message);
-        }
-      };
       fetchListings();
     }
   }, [useMockData]);
-
+  
   const toggleMockData = () => {
     setUseMockData(!useMockData);
   };
@@ -56,21 +47,15 @@ const ZillowListings = () => {
         {useMockData ? "Use Real Data" : "Use Mock Data"}
       </button>
       {error ? (
-        <div>Error: {error}</div>
+        <p>{error}</p>
       ) : (
         <ul>
-          {listings.map((listing, index) => (
-            <li key={index}>
-              <h2>{listing.address.street}</h2>
-              <p>
-                {listing.address.city}, {listing.address.state}{" "}
-                {listing.address.zipcode}
-              </p>
-              <p>Price: {listing.lastSoldPrice._}</p>
-              <p>
-                Zestimate: {listing.zestimate.amount._}{" "}
-                {listing.zestimate.amount.currency}
-              </p>
+          {Array.isArray(listings.result) && listings.result.map((listing) => (
+            <li key={listing.zpid}>
+              <p>{listing.address.street}</p>
+              <p>{listing.address.city}</p>
+              <p>{listing.address.state}</p>
+              <p>{listing.address.zipcode}</p>
             </li>
           ))}
         </ul>
