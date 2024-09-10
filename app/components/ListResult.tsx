@@ -19,70 +19,70 @@ const ListResult = ({ listing }: { listing: Result }) => {
 
       <div className="list-result-row">
         <div className="flex text-left">
-          <strong>Bedrooms:</strong>
-          <div>{listing.bedrooms}</div>
+          <div className="label">Bedrooms:</div>
+          <div className="value">{listing.bedrooms}</div>
         </div>
         <div className="flex text-left">
-          <strong>Bathrooms:</strong>
-          <div>{listing.bathrooms}</div>
+          <div className="label">Bathrooms:</div>
+          <div className="value">{listing.bathrooms}</div>
         </div>
         <div className="flex text-left">
-          <strong>Square Footage:</strong>
-          <div>{listing.sqft}</div>
-        </div>
-      </div>
-
-      <div className="list-result-row">
-        <div className="flex text-left">
-          <strong>Year Built:</strong>
-          <div>{listing.yearBuilt}</div>
-        </div>
-        <div className="flex text-left">
-          <strong>Type:</strong>
-          <div>{listing.type}</div>
-        </div>
-        <div className="flex text-left">
-          <strong>Lot Size:</strong>
-          <div>{listing.lotSize}</div>
-        </div>
-        <div className="flex text-left">
-          <strong>Listing Status:</strong>
-          <div>{listing.listingStatus}</div>
-        </div>
-        <div className="flex text-left">
-          <strong>MLS ID:</strong>
-          <div>{listing.mlsId}</div>
+          <div className="label">Square Footage:</div>
+          <div className="value">{listing.sqft}</div>
         </div>
       </div>
 
       <div className="list-result-row">
         <div className="flex text-left">
-          <strong>Listing Description:</strong>
-          <div>{listing.listingDescription}</div>
+          <div className="label">Year Built:</div>
+          <div className="value">{listing.yearBuilt}</div>
+        </div>
+        <div className="flex text-left">
+          <div className="label">Type:</div>
+          <div className="value">{listing.type}</div>
+        </div>
+        <div className="flex text-left">
+          <div className="label">Lot Size:</div>
+          <div className="value">{listing.lotSize}</div>
+        </div>
+        <div className="flex text-left">
+          <div className="label">Listing Status:</div>
+          <div className="value">{listing.listingStatus}</div>
+        </div>
+        <div className="flex text-left">
+          <div className="label">MLS ID:</div>
+          <div className="value">{listing.mlsId}</div>
         </div>
       </div>
 
       <div className="list-result-row">
         <div className="flex text-left">
-          <strong>Features:</strong>
+          <div className="label">Listing Description:</div>
+          <div className="value">{listing.listingDescription}</div>
+        </div>
+      </div>
+
+      <div className="list-result-row">
+        <div className="flex text-left">
+          <div className="label">Features:</div>
           {listing.features.map((feature) => (
             <div key={feature}>{feature}</div>
           ))}
         </div>
         <div className="flex text-left">
-          <strong>Appliances:</strong>
+          <div className="label">Appliances:</div>
           {listing.appliances.map((appliance, index) => (
             <div key={index}>{appliance}</div>
           ))}
         </div>
         <div className="flex text-left">
-          <strong>Flooring:</strong>
+          <div className="label">Flooring:</div>
           {listing.flooring.map((floor) => (
             <div key={floor}>{floor}</div>
           ))}
         </div>
         <div className="flex text-left">
-          <strong>Parking:</strong>
+          <div className="label">Parking:</div>
           {listing.parking.map((park) => (
             <div key={park}>{park}</div>
           ))}
@@ -91,47 +91,47 @@ const ListResult = ({ listing }: { listing: Result }) => {
 
       <div className="list-result-row">
         <div className="flex text-left">
-          <strong>Source:</strong>
-          <div>{listing.source}</div>
+          <div className="label">Source:</div>
+          <div className="value">{listing.source}</div>
         </div>
         <div className="flex text-left">
-          <strong>Updated:</strong>
-          <div>{listing.updated}</div>
+          <div className="label">Updated:</div>
+          <div className="value">{listing.updated}</div>
         </div>
         <div className="flex text-left">
-          <strong>Broker Name:</strong>
-          <div>{listing.brokerName}</div>
+          <div className="label">Broker Name:</div>
+          <div className="value">{listing.brokerName}</div>
         </div>
         <div className="flex text-left">
-          <strong>Broker Phone:</strong>
-          <div>{listing.brokerPhone}</div>
+          <div className="label">Broker Phone:</div>
+          <div className="value">{listing.brokerPhone}</div>
         </div>
         <div className="flex text-left">
-          <strong>Broker Email:</strong>
-          <div>{listing.brokerEmail}</div>
+          <div className="label">Broker Email:</div>
+          <div className="value">{listing.brokerEmail}</div>
         </div>
       </div>
 
       <div className="list-result-row">
         <div className="flex text-left">
-          <strong>Source:</strong>
-          <div>{listing.source}</div>
+          <div className="label">Source:</div>
+          <div className="value">{listing.source}</div>
         </div>
         <div className="flex text-left">
-          <strong>Updated:</strong>
-          <div>{listing.updated}</div>
+          <div className="label">Updated:</div>
+          <div className="value">{listing.updated}</div>
         </div>
         <div className="flex text-left">
-          <strong>Agent Name:</strong>
-          <div>{listing.agentName}</div>
+          <div className="label">Agent Name:</div>
+          <div className="value">{listing.agentName}</div>
         </div>
         <div className="flex text-left">
-          <strong>Agent Phone:</strong>
-          <div>{listing.agentPhone}</div>
+          <div className="label">Agent Phone:</div>
+          <div className="value">{listing.agentPhone}</div>
         </div>
         <div className="flex text-left">
-          <strong>Agent Email:</strong>
-          <div>{listing.agentEmail}</div>
+          <div className="label">Agent Email:</div>
+          <div className="value">{listing.agentEmail}</div>
         </div>
       </div>
     </div>

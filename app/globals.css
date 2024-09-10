@@ -3,25 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --primary-color: #6e788d;
+  --background-color: #1b1e24;
+  --text-color: #ddd;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: .9rem;
 }
 
 a {
-  @apply text-blue-600 hover:text-blue-800;
+  color: var(--primary-color);
 }
 
 button {
@@ -69,9 +64,18 @@ em {
 }
 
 .list-result-item {
-  @apply flex flex-col items-center justify-between p-2 border-b border-gray-300;
+  @apply flex flex-col items-center justify-between p-2 border-b border-gray-500;
 }
 
 .list-result-row {
-  @apply flex w-full justify-between
+  @apply flex w-full justify-between;
+}
+
+.label {
+  color: var(--primary-color);
+  @apply pr-2;
+}
+
+.value {
+  @apply font-medium;
 }
