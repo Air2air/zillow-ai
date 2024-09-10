@@ -63,7 +63,7 @@ const ZillowListings = () => {
       {error ? (
         <p>{error}</p>
       ) : (
-        <div className="flex flex-col w-full bg-red-200">
+        <div className="flex flex-col w-full ">
           {dataFetched &&
             Array.isArray(listings.result) &&
             listings.result.map((listing: Result) => (
