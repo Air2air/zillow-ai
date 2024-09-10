@@ -1,16 +1,18 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 import mockData from "../data/mockData.json";
 import { MockData, Result } from "../types/types";
+import ListResult from "./ListResult";
 
 const ZillowListings = () => {
   const [listings, setListings] = useState<MockData>({ result: [] });
   const [error, setError] = useState(null);
   const [useMockData, setUseMockData] = useState(true);
+  const [dataFetched, setDataFetched] = useState(false);
 
-  const fetchListings = async () => {
+  const fetchListings = useCallback(async () => {
     try {
       const response = await axios.get(
         "https://www.zillow.com/webservice/GetDeepSearchResults.htm",
@@ -23,26 +25,34 @@ const ZillowListings = () => {
       );
       const data: MockData = response.data;
       setListings(data);
+      setDataFetched(true);
     } catch (error: any) {
       setError(error.message);
     }
-  };
+  }, []);
+
+  const loadMockData = useCallback(() => {
+    setListings(mockData);
+    setDataFetched(true);
+  }, []);
+
+  const toggleMockData = useCallback(() => {
+    setUseMockData((prevState) => !prevState);
+    setDataFetched(false);
+    if (!useMockData) {
+      loadMockData();
+    } else {
+      fetchListings();
+    }
+  }, [useMockData, loadMockData, fetchListings]);
 
   useEffect(() => {
     if (useMockData) {
-      setListings(mockData);
-    }
-  }, [useMockData]);
-  
-  useEffect(() => {
-    if (!useMockData) {
+      loadMockData();
+    } else {
       fetchListings();
     }
-  }, [useMockData]);
-
-  const toggleMockData = () => {
-    setUseMockData(prevState => !prevState);
-  };
+  }, [useMockData, loadMockData, fetchListings]);
 
   return (
     <>
@@ -54,17 +64,10 @@ const ZillowListings = () => {
         <p>{error}</p>
       ) : (
         <div className="flex flex-col w-full bg-red-200">
-          {Array.isArray(listings.result) &&
-            listings.result.map((listing) => (
-              <div
-                key={listing.zpid}
-                className="flex w-full justify-evenly text-left  bg-sky-200 py-2"
-              >
-                <div>{listing.address.street}</div>
-                <div>{listing.address.city}</div>
-                <div>{listing.address.state}</div>
-                <div>{listing.address.zipcode}</div>
-              </div>
+          {dataFetched &&
+            Array.isArray(listings.result) &&
+            listings.result.map((listing: Result) => (
+              <ListResult key={listing.zpid} listing={listing} />
             ))}
         </div>
       )}

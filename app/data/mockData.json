@@ -1,92 +1,109 @@
 {
-  "result": [
-    {
-      "zpid": "12345678",
-      "links": {
-        "homedetails": "http://www.zillow.com/homedetails/12345678_zpid/",
-        "graphsanddata": "http://www.zillow.com/homedetails/12345678_zpid/#graphs-and-data",
-        "mapthishome": "http://www.zillow.com/homedetails/12345678_zpid/#map-this-home",
-        "comparables": "http://www.zillow.com/homedetails/12345678_zpid/#comparables"
-      },
-      "address": {
-        "street": "123 Main St",
-        "city": "Anytown",
-        "state": "CA",
-        "zipcode": "12345"
-      },
-      "FIPScounty": "06037",
-      "useCode": "SingleFamily",
-      "taxAssessmentYear": "2022",
-      "taxAssessment": "123456.0",
-      "yearBuilt": "1950",
-      "lotSizeSqFt": "5000",
-      "finishedSqFt": "1500",
-      "bathrooms": "2.0",
-      "bedrooms": "3",
-      "totalRooms": "5",
-      "lastSoldDate": "2022-01-01",
-      "lastSoldPrice": {
-        "currency": "USD",
-        "_": "500000"
-      },
-      "zestimate": {
-        "amount": {
-          "currency": "USD",
-          "_": "550000"
+    "result": [
+      {
+        "zpid": "12345678",
+        "address": {
+          "street": "123 Main St",
+          "city": "Anytown",
+          "state": "CA",
+          "zipcode": "12345"
         },
-        "last-updated": "2023-02-15",
-        "oneWeekChange": {
-          "deprecated": "true"
-        }
+        "price": "$500,000",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "sqft": 1500,
+        "yearBuilt": 2010,
+        "type": "Single Family Home",
+        "lotSize": 0.25,
+        "agentName": "John Doe",
+        "brokerName": "ABC Realty",
+        "listingStatus": "Active",
+        "mlsId": "12345678",
+        "source": "Zillow",
+        "updated": "2022-01-01",
+        "agentPhone": "555-555-5555",
+        "agentEmail": "johndoe@abcrealty.com",
+        "brokerPhone": "555-555-5555",
+        "brokerEmail": "info@abcrealty.com",
+        "listingDescription": "Beautiful 3 bedroom, 2 bathroom single family home in Anytown, CA.",
+        "features": ["Pool", "Fireplace", "Granite Countertops"],
+        "appliances": ["Refrigerator", "Oven", "Dishwasher"],
+        "flooring": ["Hardwood", "Tile", "Carpet"],
+        "parking": ["Attached Garage", "Driveway"],
+        "schoolDistrict": "Anytown School District",
+        "elementarySchool": "Anytown Elementary School",
+        "middleSchool": "Anytown Middle School",
+        "highSchool": "Anytown High School"
       },
-      "zindexValue": "538,500",
-      "overallType": "Single Family Residential",
-      "overallTypeSource": "",
-      "parcelId": "1234567890"
-    },
-    {
-      "zpid": "98765432",
-      "links": {
-        "homedetails": "http://www.zillow.com/homedetails/98765432_zpid/",
-        "graphsanddata": "http://www.zillow.com/homedetails/98765432_zpid/#graphs-and-data",
-        "mapthishome": "http://www.zillow.com/homedetails/98765432_zpid/#map-this-home",
-        "comparables": "http://www.zillow.com/homedetails/98765432_zpid/#comparables"
-      },
-      "address": {
-        "street": "456 Elm St",
-        "city": "Othertown",
-        "state": "NY",
-        "zipcode": "67890"
-      },
-      "FIPScounty": "36047",
-      "useCode": "Condo",
-      "taxAssessmentYear": "2021",
-      "taxAssessment": "98765.0",
-      "yearBuilt": "2000",
-      "lotSizeSqFt": "1000",
-      "finishedSqFt": "2000",
-      "bathrooms": "1.5",
-      "bedrooms": "2",
-      "totalRooms": "4",
-      "lastSoldDate": "2021-06-01",
-      "lastSoldPrice": {
-        "currency": "USD",
-        "_": "300000"
-      },
-      "zestimate": {
-        "amount": {
-          "currency": "USD",
-          "_": "350000"
+      {
+        "zpid": "23456789",
+        "address": {
+          "street": "456 Elm St",
+          "city": "Othertown",
+          "state": "NY",
+          "zipcode": "67890"
         },
-        "last-updated": "2023-03-15",
-        "oneWeekChange": {
-          "deprecated": "true"
-        }
+        "price": "$750,000",
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "sqft": 2500,
+        "yearBuilt": 2015,
+        "type": "Condo",
+        "lotSize": 0.5,
+        "agentName": "Jane Smith",
+        "brokerName": "XYZ Realty",
+        "listingStatus": "Pending",
+        "mlsId": "23456789",
+        "source": "Zillow",
+        "updated": "2022-02-01",
+        "agentPhone": "555-555-5555",
+        "agentEmail": "janesmith@xyzrealty.com",
+        "brokerPhone": "555-555-5555",
+        "brokerEmail": "info@xyzrealty.com",
+        "listingDescription": "Stunning 4 bedroom, 3 bathroom condo in Othertown, NY.",
+        "features": ["Roof Deck", "Fireplace", "Hardwood Floors"],
+        "appliances": ["Refrigerator", "Oven", "Dishwasher"],
+        "flooring": ["Hardwood", "Tile", "Carpet"],
+        "parking": ["Attached Garage", "Driveway"],
+        "schoolDistrict": "Othertown School District",
+        "elementarySchool": "Othertown Elementary School",
+        "middleSchool": "Othertown Middle School",
+        "highSchool": "Othertown High School"
       },
-      "zindexValue": "328,500",
-      "overallType": "Condominium",
-      "overallTypeSource": "",
-      "parcelId": "9876543210"
-    }
-  ]
-}
+      {
+        "zpid": "34567890",
+        "address": {
+          "street": "789 Oak St",
+          "city": "Thistown",
+          "state": "TX",
+          "zipcode": "34567"
+        },
+        "price": "$300,000",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "sqft": 1000,
+        "yearBuilt": 2005,
+        "type": "Townhouse",
+        "lotSize": 0.1,
+        "agentName": "Bob Johnson",
+        "brokerName": "DEF Realty",
+        "listingStatus": "Sold",
+        "mlsId": "34567890",
+        "source": "Zillow",
+        "updated": "2022-03-01",
+        "agentPhone": "555-555-5555",
+        "agentEmail": "bobjohnson@defrealty.com",
+        "brokerPhone": "555-555-5555",
+        "brokerEmail": "info@defrealty.com",
+        "listingDescription": "Cozy 2 bedroom, 1 bathroom townhouse in Thistown, TX.",
+        "features": ["Patio", "Fireplace", "Granite Countertops"],
+        "appliances": ["Refrigerator", "Oven", "Dishwasher"],
+        "flooring": ["Hardwood", "Tile", "Carpet"],
+        "parking": ["Attached Garage", "Driveway"],
+        "schoolDistrict": "Thistown School District",
+        "elementarySchool": "Thistown Elementary School",
+        "middleSchool": "Thistown Middle School",
+        "highSchool": "Thistown High School"
+      }
+    ]
+  }

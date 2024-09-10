@@ -1,24 +1,13 @@
-export interface Links {
-  homedetails: string;
-  graphsanddata: string;
-  mapthishome: string;
-  comparables: string;
+export interface Agent {
+  name: string;
+  phone: string;
+  email: string;
 }
 
-export interface LastSoldPrice {
-  currency: string;
-  _: string;
-}
-
-export interface Zestimate {
-  amount: {
-    currency: string;
-    _: string;
-  };
-  "last-updated": string;
-  oneWeekChange: {
-    deprecated: string;
-  };
+export interface Broker {
+  name: string;
+  phone: string;
+  email: string;
 }
 
 export interface Address {
@@ -30,28 +19,63 @@ export interface Address {
 
 export interface Result {
   zpid: string;
-  links: Links;
   address: Address;
-  FIPScounty: string;
-  useCode: string;
-  taxAssessmentYear: string;
-  taxAssessment: string;
-  yearBuilt: string;
-  lotSizeSqFt: string;
-  finishedSqFt: string;
-  bathrooms: string;
-  bedrooms: string;
-  totalRooms: string;
-  lastSoldDate: string;
-  lastSoldPrice: LastSoldPrice;
-  zestimate: Zestimate;
-  zindexValue: string;
-  overallType: string;
-  overallTypeSource: string;
-  parcelId: string;
+  price: string;
+  bedrooms: number;
+  bathrooms: number;
+  sqft: number;
+  yearBuilt: number;
+  type: string;
+  lotSize: number;
+  agentName: string;
+  brokerName: string;
+  listingStatus: string;
+  mlsId: string;
+  source: string;
+  updated: string;
+  agentPhone: string;
+  agentEmail: string;
+  brokerPhone: string;
+  brokerEmail: string;
+  listingDescription: string;
+  features: string[];
+  appliances: string[];
+  flooring: string[];
+  parking: string[];
+  schoolDistrict: string;
+  elementarySchool: string;
+  middleSchool: string;
+  highSchool: string;
+}
+
+export interface Appliances {
+  appliance: string;
+}
+
+export interface Flooring {
+  type: string;
+}
+
+export interface Parking {
+  type: string;
+}
+
+export interface SchoolDistrict {
+  name: string;
+}
+
+export interface ElementarySchool {
+  name: string;
+}
+
+export interface MiddleSchool {
+  name: string;
+}
+
+export interface HighSchool {
+  name: string;
 }
 
 export interface MockData {
   result: Result[];
 }
-
