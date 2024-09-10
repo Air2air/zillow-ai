@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
@@ -27,21 +27,25 @@ const ZillowListings = () => {
       setError(error.message);
     }
   };
-  
+
   useEffect(() => {
     if (useMockData) {
       setListings(mockData);
-    } else {
-      fetchListings();
     }
   }, [useMockData]);
   
+  useEffect(() => {
+    if (!useMockData) {
+      fetchListings();
+    }
+  }, [useMockData]);
+
   const toggleMockData = () => {
-    setUseMockData(!useMockData);
+    setUseMockData(prevState => !prevState);
   };
 
   return (
-    <div>
+    <>
       <h1>Zillow Listings</h1>
       <button onClick={toggleMockData}>
         {useMockData ? "Use Real Data" : "Use Mock Data"}
@@ -49,18 +53,22 @@ const ZillowListings = () => {
       {error ? (
         <p>{error}</p>
       ) : (
-        <ul>
-          {Array.isArray(listings.result) && listings.result.map((listing) => (
-            <li key={listing.zpid}>
-              <p>{listing.address.street}</p>
-              <p>{listing.address.city}</p>
-              <p>{listing.address.state}</p>
-              <p>{listing.address.zipcode}</p>
-            </li>
-          ))}
-        </ul>
+        <div className="flex flex-col w-full bg-red-200">
+          {Array.isArray(listings.result) &&
+            listings.result.map((listing) => (
+              <div
+                key={listing.zpid}
+                className="flex w-full justify-evenly text-left  bg-sky-200 py-2"
+              >
+                <div>{listing.address.street}</div>
+                <div>{listing.address.city}</div>
+                <div>{listing.address.state}</div>
+                <div>{listing.address.zipcode}</div>
+              </div>
+            ))}
+        </div>
       )}
-    </div>
+    </>
   );
 };
 
