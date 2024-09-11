@@ -1,0 +1,261 @@
+[
+  {
+    "zpid": "1234",
+    "address": {
+      "street": "2663 Belmont Canyon Rd",
+      "city": "Belmont",
+      "state": "CA",
+      "zip": "94002",
+      "latitude": 37.524851,
+      "longitude": -122.298611
+    },
+    "agent": {
+      "name": "Linda Trinidad",
+      "phoneNumber": "650-346-1929",
+      "email": ""
+    },
+    "brokerage": {
+      "name": "",
+      "phoneNumber": "",
+      "email": ""
+    },
+    "listing": {
+      "id": "",
+      "status": "",
+      "price": 2198999,
+      "date": "2023-02-16T00:00:00",
+      "expirationDate": ""
+    },
+    "property": {
+      "type": "Single Family Home",
+      "yearBuilt": 2006,
+      "squareFootage": 6121,
+      "bedrooms": 7,
+      "bathrooms": 8,
+      "parking": "Attached Garage",
+      "features": [
+        { "text": "Private Backyard" },
+        { "text": "Outdoor Kitchen" },
+        { "text": "Fire Pit" }
+      ],
+      "appliances": [
+        { "text": "Dishwasher" },
+        { "text": "Refrigerator" },
+        { "text": "Oven" }
+      ],
+      "flooring": [{ "text": "Hardwood" }, { "text": "Tile" }],
+      "lotSize": 0.96,
+      "pool": "No",
+      "fireplace": "Yes",
+      "heating": "Forced Air",
+      "cooling": "Central Air",
+      "interiorFeatures": [
+        { "text": "High Ceilings" },
+        { "text": "Recessed Lighting" },
+        { "text": "Crown Molding" }
+      ],
+      "exteriorFeatures": [
+        { "text": "Private Patio" },
+        { "text": "Landscaped Yard" },
+        { "text": "Sprinkler System" }
+      ]
+    },
+    "school": {
+      "district": "",
+      "elementary": "Belmont Elementary School",
+      "middle": "Ralston Middle School",
+      "high": "Carlmont High School"
+    },
+    "neighborhood": {
+      "name": "Belmont Hills",
+      "description": "A scenic and family-friendly neighborhood with easy access to parks, schools, and shopping."
+    },
+    "media": {
+      "photos": [
+        "https://example.com/photo1.jpg",
+        "https://example.com/photo2.jpg"
+      ],
+      "virtualTours": ["https://example.com/virtual-tour"],
+      "videos": []
+    },
+    "energyEfficiency": {
+      "features": [{ "text": "Solar Panels" }]
+    },
+    "accessibility": {
+      "features": [{ "text": "Wheelchair Ramp" }, { "text": "Wide Doorways" }]
+    },
+    "community": {
+      "features": [{ "text": "Community Pool" }, { "text": "Clubhouse" }]
+    }
+  },
+  {
+    "zpid": "5678",
+    "address": {
+      "street": "2723 Monserat Ave",
+      "city": "Belmont",
+      "state": "CA",
+      "zip": "94002",
+      "latitude": 37.5203,
+      "longitude": -122.2753
+    },
+    "agent": {
+      "name": "Linda Trinidad",
+      "phoneNumber": "650-346-1929",
+      "email": ""
+    },
+    "brokerage": {
+      "name": "",
+      "phoneNumber": "",
+      "email": ""
+    },
+    "listing": {
+      "id": "",
+      "status": "",
+      "price": 2950000,
+      "date": "2024-09-01",
+      "expirationDate": ""
+    },
+    "property": {
+      "type": "Single Family Home",
+      "yearBuilt": 2010,
+      "squareFootage": 2500,
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "parking": "Attached Garage",
+      "features": [
+        { "text": "Hardwood Floors" },
+        { "text": "Granite Countertops" },
+        { "text": "Stainless Steel Appliances" }
+      ],
+      "appliances": [
+        { "text": "Refrigerator" },
+        { "text": "Oven" },
+        { "text": "Dishwasher" }
+      ],
+      "flooring": [{ "text": "Hardwood" }, { "text": "Carpet" }],
+      "lotSize": 5000
+    },
+    "school": {
+      "district": "Belmont-Redwood Shores School District",
+      "elementary": "Cipriani Elementary School",
+      "middle": "Ralston Middle School",
+      "high": "Carlmont High School"
+    },
+    "neighborhood": {
+      "name": "Belmont Hills",
+      "description": "A scenic and family-friendly neighborhood with easy access to parks, schools, and shopping."
+    },
+    "media": {
+      "photos": [
+        "https://example.com/photo1.jpg",
+        "https://example.com/photo2.jpg"
+      ],
+      "virtualTours": ["https://example.com/virtual-tour"],
+      "videos": []
+    },
+    "energyEfficiency": {
+      "features": [{ "text": "Solar Panels" }]
+    },
+    "accessibility": {
+      "features": [{ "text": "Wheelchair Ramp" }, { "text": "Wide Doorways" }]
+    },
+    "community": {
+      "features": [{ "text": "Community Pool" }, { "text": "Clubhouse" }]
+    }
+  },
+  {
+    "zpid": "1357",
+    "address": {
+      "street": "3 Somerset Ct",
+      "city": "Belmont",
+      "state": "CA",
+      "zip": "94002",
+      "latitude": null,
+      "longitude": null
+    },
+    "agent": {
+      "name": "",
+      "phoneNumber": "",
+      "email": ""
+    },
+    "brokerage": {
+      "name": "",
+      "phoneNumber": "",
+      "email": ""
+    },
+    "listing": {
+      "id": "",
+      "status": "",
+      "price": 2598000,
+      "date": "9/4/24",
+      "expirationDate": ""
+    },
+    "property": {
+      "type": "Single Family Home",
+      "yearBuilt": 2005,
+      "squareFootage": 2400,
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "parking": "Attached 2 car garage",
+      "features": [
+        { "text": "Private backyard" },
+        { "text": "Hardwood floors" },
+        { "text": "Stainless steel appliances" },
+        { "text": "Granite countertops" }
+      ],
+      "appliances": [
+        { "text": "Stainless steel refrigerator" },
+        { "text": "Stainless steel oven" },
+        { "text": "Dishwasher" },
+        { "text": "Microwave" }
+      ],
+      "flooring": [
+        { "text": "Hardwood floors" },
+        { "text": "Tile floors" },
+        { "text": "Carpet" }
+      ],
+      "lotSize": 0.5,
+      "pool": "No",
+      "fireplace": "Yes",
+      "heating": "Forced air",
+      "cooling": "Central air",
+      "interiorFeatures": [
+        { "text": "High ceilings" },
+        { "text": "Recessed lighting" },
+        { "text": "Crown molding" }
+      ],
+      "exteriorFeatures": [
+        { "text": "Private patio" },
+        { "text": "Landscaped yard" },
+        { "text": "Sprinkler system" }
+      ]
+    },
+    "school": {
+      "district": "Belmont-Redwood Shores School District",
+      "elementary": "Cipriani Elementary School",
+      "middle": "Ralston Middle School",
+      "high": "Carlmont High School"
+    },
+    "neighborhood": {
+      "name": "Belmont Hills",
+      "description": "A scenic and family-friendly neighborhood with easy access to parks, schools, and shopping."
+    },
+    "media": {
+      "photos": [
+        "https://example.com/photo1.jpg",
+        "https://example.com/photo2.jpg"
+      ],
+      "virtualTours": ["https://example.com/virtual-tour"],
+      "videos": []
+    },
+    "energyEfficiency": {
+      "features": [{ "text": "Solar Panels" }]
+    },
+    "accessibility": {
+      "features": [{ "text": "Wheelchair Ramp" }, { "text": "Wide Doorways" }]
+    },
+    "community": {
+      "features": [{ "text": "Community Pool" }, { "text": "Clubhouse" }]
+    }
+  }
+]
