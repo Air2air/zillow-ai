@@ -45,6 +45,7 @@
       ],
       "flooring": [{ "text": "Hardwood" }, { "text": "Tile" }],
       "lotSize": 0.96,
+      "description": "Welcome to 2663 Belmont Canyon Road, an exquisite residence that blends modern elegance with timeless charm in the majestic Belmont Hills. This exceptional home sits on a 6,900 square foot lot and boasts 2,140 square feet of serene living space.Upon entering, you are greeted by an open-concept living area bathed in natural light, highlighting vaulted ceilings and wood-burning fireplaces. The cooks kitchen features an eat-in kitchen and generous cabinets/pantry. The formal dining room and living room offer glimpses of the SF Bay from balconies for the most engaging indoor-outdoor flow. Retreat to the primary bedroom featuring a completely remodeled ensuite bathroom with spa-like embellishments. The additional bedrooms offer versatility for family, guests or home office use.  The spacious backyard is a nature lovers dream. Enjoy quiet moments sipping coffee in the tranquil setting or host family and friends. Outdoor enthusiasts will love nearby hiking/biking trails, and the convenient access to Ralston Ave/Hwy-92 ensures that urban amenities are just a short drive away. Known for its exceptional schools and easy access to Silicon Valley and the broader SF Bay Area.",
       "pool": "No",
       "fireplace": "Yes",
       "heating": "Forced Air",
@@ -133,7 +134,8 @@
         { "text": "Dishwasher" }
       ],
       "flooring": [{ "text": "Hardwood" }, { "text": "Carpet" }],
-      "lotSize": 5000
+      "lotSize": 5000,
+      "description": "Step into this beautifully re-imagined Belmont home, where elegance & warmth blend effortlessly. With 4 bedrooms, 3 baths, & a private office, this 2,646 sqft haven offers space to live, relax, & create. Perched on a sprawling 10,000 square-foot double lot, the home embraces you with breathtaking views of the Belmont & San Carlos hills, best enjoyed from the expansive deck perfect for sunset gatherings or quiet mornings with a cup of coffee. Inside, two luxurious primary suites provide serene retreats, each with its own en-suite bath. The great room, w/ its double sliding doors & abundant natural light, invites you to gather, while the entertainment kitchen becomes the heart of the home, ready for everything from intimate meals to lively dinners. Larger bedrooms & a thoughtfully designed laundry room offer both comfort & convenience, making every moment here feel effortlessly graceful. The beautifully landscaped yard, with its mature fruit trees & glowing gas fire pit, sets the stage for quiet moments under the stars or lively gatherings with friends. Enjoy the effortless flow between indoor/outdoor living, where the great room & office open to a peaceful & flat backyard. With a full basement, mud room, ample storage, and a workshop, this home is as versatile as it is enchanting."
     },
     "school": {
       "district": "Belmont-Redwood Shores School District",
@@ -215,6 +217,7 @@
         { "text": "Carpet" }
       ],
       "lotSize": 0.5,
+      "description": "Discover the perfect blend of luxury and tranquility in Belmonts prestigious Hallmark neighborhood. This stunning 4-bedroom, 2.5-bathroom home offers 2,360 square feet of elegant living space with breathtaking Bay and Canyon views. The expansive living room features vaulted ceilings and a cozy fireplace, creating a warm and inviting atmosphere perfect for gatherings. The home includes a versatile den, and a formal dining room strategically located for easy entertaining.Modern comforts include new plush wall-to-wall carpeting, fresh interior paint, and updated lighting, masterpiece view kitchen with a breakfast bar for casual dining. Cedar-lined closets add a touch of luxury, while the large 10,000-square-foot lot provides an outdoor oasis, backing up to open space with trails for nature enthusiasts. The cul-de-sac location ensures a low traffic frontage, making this home an ideal retreat.",
       "pool": "No",
       "fireplace": "Yes",
       "heating": "Forced air",
