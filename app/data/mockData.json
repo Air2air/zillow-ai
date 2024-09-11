@@ -1,109 +1,205 @@
 {
-    "result": [
-      {
-        "zpid": "12345678",
-        "address": {
-          "street": "123 Main St",
-          "city": "Anytown",
-          "state": "CA",
-          "zipcode": "12345"
-        },
-        "price": "$500,000",
+  "result": [
+    {
+      "zpid": "12345678",
+      "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "zip": "12345",
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "agent": {
+        "name": "John Doe",
+        "phoneNumber": "555-555-5555",
+        "email": "johndoe@example.com"
+      },
+      "brokerage": {
+        "name": "ABC Realty",
+        "phoneNumber": "555-555-5555",
+        "email": "info@abcrealty.com"
+      },
+      "listing": {
+        "id": "12345678",
+        "status": "Active",
+        "price": 500000,
+        "date": "2022-01-01",
+        "expirationDate": "2022-12-31"
+      },
+      "property": {
+        "type": "Single Family Home",
+        "yearBuilt": 2010,
+        "squareFootage": 1500,
         "bedrooms": 3,
         "bathrooms": 2,
-        "sqft": 1500,
-        "yearBuilt": 2010,
-        "type": "Single Family Home",
-        "lotSize": 0.25,
-        "agentName": "John Doe",
-        "brokerName": "ABC Realty",
-        "listingStatus": "Active",
-        "mlsId": "12345678",
-        "source": "Zillow",
-        "updated": "2022-01-01",
-        "agentPhone": "555-555-5555",
-        "agentEmail": "johndoe@abcrealty.com",
-        "brokerPhone": "555-555-5555",
-        "brokerEmail": "info@abcrealty.com",
-        "listingDescription": "Beautiful 3 bedroom, 2 bathroom single family home in Anytown, CA.",
+        "parking": "Attached Garage",
         "features": ["Pool", "Fireplace", "Granite Countertops"],
         "appliances": ["Refrigerator", "Oven", "Dishwasher"],
         "flooring": ["Hardwood", "Tile", "Carpet"],
-        "parking": ["Attached Garage", "Driveway"],
-        "schoolDistrict": "Anytown School District",
-        "elementarySchool": "Anytown Elementary School",
-        "middleSchool": "Anytown Middle School",
-        "highSchool": "Anytown High School"
+        "lotSize": 65000
       },
-      {
-        "zpid": "23456789",
-        "address": {
-          "street": "456 Elm St",
-          "city": "Othertown",
-          "state": "NY",
-          "zipcode": "67890"
-        },
-        "price": "$750,000",
+      "school": {
+        "district": "Anytown School District",
+        "elementary": "Anytown Elementary School",
+        "middle": "Anytown Middle School",
+        "high": "Anytown High School"
+      },
+      "neighborhood": {
+        "name": "Downtown Anytown",
+        "description": "Vibrant downtown area with shops, restaurants, and entertainment"
+      },
+      "media": {
+        "photos": [
+          "https://example.com/photo1.jpg",
+          "https://example.com/photo2.jpg"
+        ],
+        "virtualTours": ["https://example.com/virtualtour1.mp4"],
+        "videos": ["https://example.com/video1.mp4"]
+      },
+      "energyEfficiency": {
+        "features": ["Solar Panels", "Energy Star Appliances"]
+      },
+      "accessibility": {
+        "features": ["Wheelchair Ramp", "Wide Doorways"]
+      },
+      "community": {
+        "features": ["Community Pool", "Community Garden"]
+      }
+    },
+    {
+      "zpid": "23456789",
+      "address": {
+        "street": "456 Elm St",
+        "city": "Othertown",
+        "state": "CA",
+        "zip": "67890",
+        "latitude": 34.0522,
+        "longitude": -118.2437
+      },
+      "agent": {
+        "name": "Jane Smith",
+        "phoneNumber": "555-555-5555",
+        "email": "janesmith@example.com"
+      },
+      "brokerage": {
+        "name": "XYZ Realty",
+        "phoneNumber": "555-555-5555",
+        "email": "info@xyzrealty.com"
+      },
+      "listing": {
+        "id": "23456789",
+        "status": "Active",
+        "price": 600000,
+        "date": "2022-02-01",
+        "expirationDate": "2022-11-30"
+      },
+      "property": {
+        "type": "Condominium",
+        "yearBuilt": 2015,
+        "squareFootage": 1200,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "parking": "Detached Garage",
+        "features": ["Gym", "Pool", "Granite Countertops"],
+        "appliances": ["Refrigerator", "Oven", "Dishwasher"],
+        "flooring": ["Hardwood", "Tile", "Carpet"],
+        "lotSize": 75000
+      },
+      "school": {
+        "district": "Othertown School District",
+        "elementary": "Othertown Elementary School",
+        "middle": "Othertown Middle School",
+        "high": "Othertown High School"
+      },
+      "neighborhood": {
+        "name": "Uptown Othertown",
+        "description": "Trendy uptown area with shops, restaurants, and entertainment"
+      },
+      "media": {
+        "photos": [
+          "https://example.com/photo3.jpg",
+          "https://example.com/photo4.jpg"
+        ],
+        "virtualTours": ["https://example.com/virtualtour2.mp4"],
+        "videos": ["https://example.com/video2.mp4"]
+      },
+      "energyEfficiency": {
+        "features": ["Solar Panels", "Energy Star Appliances"]
+      },
+      "accessibility": {
+        "features": ["Wheelchair Ramp", "Wide Doorways"]
+      },
+      "community": {
+        "features": ["Community Pool", "Community Garden"]
+      }
+    },
+    {
+      "zpid": "34567890",
+      "address": {
+        "street": "789 Oak St",
+        "city": "Thirdtown",
+        "state": "CA",
+        "zip": "90123",
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "agent": {
+        "name": "Bob Johnson",
+        "phoneNumber": "555-555-5555",
+        "email": "bobjohnson@example.com"
+      },
+      "brokerage": {
+        "name": "PQR Realty",
+        "phoneNumber": "555-555-5555",
+        "email": "info@pqrealty.com"
+      },
+      "listing": {
+        "id": "34567890",
+        "status": "Active",
+        "price": 700000,
+        "date": "2022-03-01",
+        "expirationDate": "2022-10-31"
+      },
+      "property": {
+        "type": "Single Family Home",
+        "yearBuilt": 2020,
+        "squareFootage": 1800,
         "bedrooms": 4,
         "bathrooms": 3,
-        "sqft": 2500,
-        "yearBuilt": 2015,
-        "type": "Condo",
-        "lotSize": 0.5,
-        "agentName": "Jane Smith",
-        "brokerName": "XYZ Realty",
-        "listingStatus": "Pending",
-        "mlsId": "23456789",
-        "source": "Zillow",
-        "updated": "2022-02-01",
-        "agentPhone": "555-555-5555",
-        "agentEmail": "janesmith@xyzrealty.com",
-        "brokerPhone": "555-555-5555",
-        "brokerEmail": "info@xyzrealty.com",
-        "listingDescription": "Stunning 4 bedroom, 3 bathroom condo in Othertown, NY.",
-        "features": ["Roof Deck", "Fireplace", "Hardwood Floors"],
+        "parking": "Attached Garage",
+        "features": ["Pool", "Fireplace", "Granite Countertops"],
         "appliances": ["Refrigerator", "Oven", "Dishwasher"],
         "flooring": ["Hardwood", "Tile", "Carpet"],
-        "parking": ["Attached Garage", "Driveway"],
-        "schoolDistrict": "Othertown School District",
-        "elementarySchool": "Othertown Elementary School",
-        "middleSchool": "Othertown Middle School",
-        "highSchool": "Othertown High School"
+        "lotSize": 5000
       },
-      {
-        "zpid": "34567890",
-        "address": {
-          "street": "789 Oak St",
-          "city": "Thistown",
-          "state": "TX",
-          "zipcode": "34567"
-        },
-        "price": "$300,000",
-        "bedrooms": 2,
-        "bathrooms": 1,
-        "sqft": 1000,
-        "yearBuilt": 2005,
-        "type": "Townhouse",
-        "lotSize": 0.1,
-        "agentName": "Bob Johnson",
-        "brokerName": "DEF Realty",
-        "listingStatus": "Sold",
-        "mlsId": "34567890",
-        "source": "Zillow",
-        "updated": "2022-03-01",
-        "agentPhone": "555-555-5555",
-        "agentEmail": "bobjohnson@defrealty.com",
-        "brokerPhone": "555-555-5555",
-        "brokerEmail": "info@defrealty.com",
-        "listingDescription": "Cozy 2 bedroom, 1 bathroom townhouse in Thistown, TX.",
-        "features": ["Patio", "Fireplace", "Granite Countertops"],
-        "appliances": ["Refrigerator", "Oven", "Dishwasher"],
-        "flooring": ["Hardwood", "Tile", "Carpet"],
-        "parking": ["Attached Garage", "Driveway"],
-        "schoolDistrict": "Thistown School District",
-        "elementarySchool": "Thistown Elementary School",
-        "middleSchool": "Thistown Middle School",
-        "highSchool": "Thistown High School"
+      "school": {
+        "district": "Thirdtown School District",
+        "elementary": "Thirdtown Elementary School",
+        "middle": "Thirdtown Middle School",
+        "high": "Thirdtown High School"
+      },
+      "neighborhood": {
+        "name": "Downtown Thirdtown",
+        "description": "Vibrant downtown area with shops, restaurants, and entertainment"
+      },
+      "media": {
+        "photos": [
+          "https://example.com/photo5.jpg",
+          "https://example.com/photo6.jpg"
+        ],
+        "virtualTours": ["https://example.com/virtualtour3.mp4"],
+        "videos": ["https://example.com/video3.mp4"]
+      },
+      "energyEfficiency": {
+        "features": ["Solar Panels", "Energy Star Appliances"]
+      },
+      "accessibility": {
+        "features": ["Wheelchair Ramp", "Wide Doorways"]
+      },
+      "community": {
+        "features": ["Community Pool", "Community Garden"]
       }
-    ]
-  }
+    }
+  ]
+}
